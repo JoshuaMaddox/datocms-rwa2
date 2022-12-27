@@ -7,6 +7,7 @@ import PostBody from "../../components/post-body";
 import PostHeader from "../../components/post-header";
 import SectionSeparator from "../../components/section-separator";
 import { HelmetDatoCms } from "gatsby-source-datocms";
+import EmailCaptureForm from "../../components/email-capture/email-capture";
 
 export default function Post({ data: { site, post, morePosts } }) {
   return (

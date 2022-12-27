@@ -1,54 +1,82 @@
 import React from "react";
-import Container from "../components/container";
-import HeroPost from "../components/hero-post";
-import Intro from "../components/intro";
-import MoreStories from "../components/more-stories";
-import { HelmetDatoCms } from "gatsby-source-datocms";
 import { graphql } from "gatsby";
+import Container from "../components/container";
+import Header from "../components/header";
+import MoreStories from "../components/more-stories";
+import PostBody from "../components/post-body";
+import PostHeader from "../components/post-header";
+import SectionSeparator from "../components/section-separator";
+import { HelmetDatoCms } from "gatsby-source-datocms";
+import EmailCaptureForm from "../components/email-capture/email-capture";
 
-export default function Index({ data: { allPosts, site, blog } }) {
-  const heroPost = allPosts.nodes[0];
-  const morePosts = allPosts.nodes.slice(1);
-
+export default function Post({ data: { site, post, morePosts } }) {
   return (
     <Container>
-      <HelmetDatoCms seo={blog.seo} favicon={site.favicon} />
-      <Intro />
-      {heroPost && (
-        <HeroPost
-          title={heroPost.title}
-          coverImage={heroPost.coverImage}
-          date={heroPost.date}
-          author={heroPost.author}
-          slug={heroPost.slug}
-          excerpt={heroPost.excerpt}
+      <HelmetDatoCms seo={post.seo} favicon={site.favicon} />
+      <Header />
+      <article>
+        <PostHeader
+          title={post.title}
+          coverImage={post.coverImage}
+          date={post.date}
+          author={post.author}
         />
-      )}
-      {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        <PostBody content={post.content} />
+      </article>
     </Container>
   );
 }
 
 export const query = graphql`
-  {
+  query PostBySlug($id: String) {
     site: datoCmsSite {
       favicon: faviconMetaTags {
         ...GatsbyDatoCmsFaviconMetaTags
       }
     }
-    blog: datoCmsBlog {
+    post: datoCmsPost(id: { eq: $id }) {
       seo: seoMetaTags {
         ...GatsbyDatoCmsSeoMetaTags
       }
+      title
+      slug
+      content {
+        value
+        blocks {
+          __typename
+          id: originalId
+          image {
+            gatsbyImageData(width: 700)
+          }
+        }
+      }
+      date
+      coverImage {
+        gatsbyImageData(width: 1500)
+      }
+      author {
+        name
+        picture {
+          gatsbyImageData(
+            layout: FIXED
+            width: 48
+            height: 48
+            imgixParams: { sat: -100 }
+          )
+        }
+      }
     }
-    allPosts: allDatoCmsPost(sort: { fields: date, order: DESC }, limit: 20) {
+    morePosts: allDatoCmsPost(
+      sort: { fields: date, order: DESC }
+      limit: 2
+      filter: { id: { ne: $id } }
+    ) {
       nodes {
         title
         slug
         excerpt
         date
         coverImage {
-          large: gatsbyImageData(width: 1500)
           small: gatsbyImageData(width: 760)
         }
         author {

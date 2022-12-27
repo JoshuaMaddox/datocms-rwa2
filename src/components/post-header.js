@@ -3,6 +3,7 @@ import Avatar from "../components/avatar";
 import Date from "../components/date";
 import CoverImage from "../components/cover-image";
 import PostTitle from "../components/post-title";
+import EmailCaptureForm from "./email-capture/email-capture";
 
 export default function PostHeader({ title, coverImage, date, author }) {
   return (
@@ -18,6 +19,7 @@ export default function PostHeader({ title, coverImage, date, author }) {
         <div className="block md:hidden mb-6">
           <Avatar name={author?.name} picture={author?.picture} />
         </div>
+        <EmailCaptureForm />
         <div className="mb-6 text-lg">
           <Date dateString={date} />
         </div>
