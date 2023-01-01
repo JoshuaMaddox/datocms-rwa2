@@ -1,20 +1,12 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Container from "../components/container";
-import Header from "../components/header";
-import MoreStories from "../components/more-stories";
 import PostBody from "../components/post-body";
-import PostHeader from "../components/post-header";
-import SectionSeparator from "../components/section-separator";
-import { HelmetDatoCms } from "gatsby-source-datocms";
-import CalloutCard from "../components/callout-card/callout-card";
-import Menu from "../components/menu/menu";
 import Hero from "../components/hero/hero";
-import Steps from "../components/steps/steps";
 
 export default function Post({ data: { site, post } }) {
   return (
-    <>
+    <Container>
       <Hero />
       <article>
         {/* <Steps /> */}
@@ -26,7 +18,7 @@ export default function Post({ data: { site, post } }) {
         /> */}
         <PostBody content={post.content} />
       </article>
-    </>
+    </Container>
     // <Container>
     //   <Menu />
     //   <HelmetDatoCms seo={post.seo} favicon={site.favicon} />
