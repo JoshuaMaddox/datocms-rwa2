@@ -7,23 +7,41 @@ import PostBody from "../components/post-body";
 import PostHeader from "../components/post-header";
 import SectionSeparator from "../components/section-separator";
 import { HelmetDatoCms } from "gatsby-source-datocms";
-import EmailCaptureForm from "../components/email-capture/email-capture";
+import CalloutCard from "../components/callout-card/callout-card";
+import Menu from "../components/menu/menu";
+import Hero from "../components/hero/hero";
+import Steps from "../components/steps/steps";
 
-export default function Post({ data: { site, post, morePosts } }) {
+export default function Post({ data: { site, post } }) {
   return (
-    <Container>
-      <HelmetDatoCms seo={post.seo} favicon={site.favicon} />
-      <Header />
+    <>
+      <Hero />
       <article>
-        <PostHeader
+        {/* <Steps /> */}
+        {/* <PostHeader
           title={post.title}
           coverImage={post.coverImage}
           date={post.date}
           author={post.author}
-        />
+        /> */}
         <PostBody content={post.content} />
       </article>
-    </Container>
+    </>
+    // <Container>
+    //   <Menu />
+    //   <HelmetDatoCms seo={post.seo} favicon={site.favicon} />
+    //   {/* <Header /> */}
+    //   {/* <CalloutCard />
+    //   <article>
+    //     <PostHeader
+    //       title={post.title}
+    //       coverImage={post.coverImage}
+    //       date={post.date}
+    //       author={post.author}
+    //     />
+    //     <PostBody content={post.content} />
+    //   </article> */}
+    // </Container>
   );
 }
 
@@ -41,6 +59,7 @@ export const query = graphql`
       title
       slug
       content {
+        value
         value
         blocks {
           __typename

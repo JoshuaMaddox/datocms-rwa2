@@ -2,10 +2,26 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Blog Demo",
+    title: "Real World Assets. A Complete Guide to RWAs.",
   },
   plugins: [
     "gatsby-plugin-postcss",
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [
+          `https://fonts.googleapis.com`,
+          `https://fonts.gstatic.com`,
+        ],
+        web: [
+          {
+            name: `Inter`,
+            file: `https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap`,
+          },
+        ],
+      },
+    },
     {
       resolve: "gatsby-source-datocms",
       options: {
