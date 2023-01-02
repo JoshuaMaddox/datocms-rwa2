@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import Container from "../components/container";
 import PostBody from "../components/post-body";
 import Hero from "../components/hero/hero";
+import { SEO } from "../components/seo";
 
 export default function Post({ data: { site, post } }) {
   return (
@@ -36,6 +37,8 @@ export default function Post({ data: { site, post } }) {
     // </Container>
   );
 }
+
+export const Head = () => <SEO />;
 
 export const query = graphql`
   query PostBySlug($id: String) {
