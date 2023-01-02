@@ -7,7 +7,7 @@ import Hero from "../components/hero/hero";
 export default function Post({ data: { site, post } }) {
   return (
     <Container>
-      <HelmetDatoCms seo={post.seo} favicon={site.favicon} />
+      {/* <HelmetDatoCms seo={post.seo} favicon={site.favicon} /> */}
       <Hero />
       <article>
         {/* <Steps /> */}
