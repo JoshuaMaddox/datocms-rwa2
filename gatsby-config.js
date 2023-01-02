@@ -2,7 +2,7 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    title: "Real World Assets. A Complete Guide to RWAs.",
+    title: "Real-World Assets. A Complete Guide to RWAs.",
   },
   plugins: [
     "gatsby-plugin-postcss",

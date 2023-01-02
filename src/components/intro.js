@@ -7,7 +7,7 @@ export default function Intro() {
         RWAs
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        The complete guide to Real World Assets
+        The complete guide to Real-World Assets
       </h4>
     </section>
   );

@@ -77,7 +77,7 @@ function EmailCaptureForm({ show, setShowEmailCapturePopup }) {
                   <h1 className="text-4xl font-black sm:text-6xl">Success!</h1>
                   <p className="mt-4 text-gray-500">
                     You have successfully subscribed to the complete guide to
-                    Real World Assets. If you don't receive an email within 24
+                    Real-World Assets. If you don't receive an email within 24
                     hours, please check your spam folder or contact us at
                     help@rwa.fyi
                   </p>
@@ -105,7 +105,7 @@ function EmailCaptureForm({ show, setShowEmailCapturePopup }) {
               </h1>
 
               <p className="mt-4 text-gray-500">
-                The guide to Real World Assets is an ongoing exploration that is
+                The guide to Real-World Assets is an ongoing exploration that is
                 updated weekly. Sign up to get the current guide and the latest
                 updates.
               </p>
