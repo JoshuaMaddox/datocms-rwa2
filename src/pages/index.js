@@ -11,30 +11,9 @@ export default function Post({ data: { site, post } }) {
       {/* <HelmetDatoCms seo={post.seo} favicon={site.favicon} /> */}
       <Hero />
       <article>
-        {/* <Steps /> */}
-        {/* <PostHeader
-          title={post.title}
-          coverImage={post.coverImage}
-          date={post.date}
-          author={post.author}
-        /> */}
         <PostBody content={post.content} />
       </article>
     </Container>
-    // <Container>
-    //   <Menu />
-    //   {/* <Header /> */}
-    //   {/* <CalloutCard />
-    //   <article>
-    //     <PostHeader
-    //       title={post.title}
-    //       coverImage={post.coverImage}
-    //       date={post.date}
-    //       author={post.author}
-    //     />
-    //     <PostBody content={post.content} />
-    //   </article> */}
-    // </Container>
   );
 }
 

@@ -2,7 +2,11 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    title: "Real-World Assets. A Complete Guide to RWAs.",
+    title: `Real World Assets. Your guide to RWAs. `,
+    description: `RWAs are eating DeFi and are the future of TradFi, tokenization, and blockchain. This growing guide focuses on everything you need to know about Real World Assets.`,
+    twitterUsername: `@rwafyi`,
+    image: `RWA_Favicon.jpg`,
+    siteUrl: `https://rwa.fyi`,
   },
   plugins: [
     "gatsby-plugin-postcss",
