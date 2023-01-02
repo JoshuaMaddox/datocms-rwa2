@@ -7,6 +7,7 @@ import Hero from "../components/hero/hero";
 export default function Post({ data: { site, post } }) {
   return (
     <Container>
+      <HelmetDatoCms seo={post.seo} favicon={site.favicon} />
       <Hero />
       <article>
         {/* <Steps /> */}
@@ -21,7 +22,6 @@ export default function Post({ data: { site, post } }) {
     </Container>
     // <Container>
     //   <Menu />
-    //   <HelmetDatoCms seo={post.seo} favicon={site.favicon} />
     //   {/* <Header /> */}
     //   {/* <CalloutCard />
     //   <article>
