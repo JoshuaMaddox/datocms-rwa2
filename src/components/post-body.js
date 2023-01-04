@@ -8,8 +8,11 @@ import { StructuredText } from "react-datocms";
 
 export default function PostBody({ content }) {
   return (
-    <div className="max-w-2xl mx-auto px-6 pt-6 lg:px-8">
+    <div id="intro" className="max-w-3xl mx-auto px-6 pt-6 lg:px-8 lg:mb-24">
       <div className="prose prose-lg prose-blue">
+        <h2 className="text-6xl text-center">
+          An Introduction to Real-World Assets—RWAs.{" "}
+        </h2>
         <StructuredText
           data={content}
           renderBlock={({ record }) => {

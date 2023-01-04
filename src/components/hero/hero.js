@@ -8,7 +8,7 @@ export default function Hero() {
   const [showEmailCapturePopup, setShowEmailCapturePopup] = useState(false);
 
   return (
-    <div className="isolate  bg-white">
+    <div className="isolate  bg-white z-60">
       <div className="px-6 pt-6 lg:px-8">
         <div>
           <nav
@@ -43,7 +43,7 @@ export default function Hero() {
                     <a
                       href="#"
                       onClick={() => setShowEmailCapturePopup(true)}
-                      className="font-semibold text-indigo-600"
+                      className="font-semibold text-blue-700"
                     >
                       <span className="absolute inset-0" aria-hidden="true" />
                       Get On The List <span aria-hidden="true">&rarr;</span>
@@ -70,7 +70,7 @@ export default function Hero() {
                   <button
                     href="#"
                     onClick={() => setShowEmailCapturePopup(true)}
-                    className="inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
+                    className="inline-block rounded-lg bg-blue-700 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-700 hover:bg-blue-700 hover:ring-blue-700"
                   >
                     Get Updates In Your Inbox
                     <span className="text-indigo-200" aria-hidden="true">

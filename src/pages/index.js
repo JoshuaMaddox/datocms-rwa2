@@ -4,15 +4,21 @@ import Container from "../components/container";
 import PostBody from "../components/post-body";
 import Hero from "../components/hero/hero";
 import { SEO } from "../components/seo";
+import Airtable from "../components/airtable/airtable";
+import Steps from "../components/steps/steps";
+import Read from "../components/read/read";
 
 export default function Post({ data: { site, post } }) {
   return (
     <Container>
       {/* <HelmetDatoCms seo={post.seo} favicon={site.favicon} /> */}
       <Hero />
+      <Steps />
       <article>
         <PostBody content={post.content} />
       </article>
+      <Airtable />
+      <Read />
     </Container>
   );
 }

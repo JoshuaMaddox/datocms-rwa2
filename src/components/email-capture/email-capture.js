@@ -51,7 +51,7 @@ function EmailCaptureForm({ show, setShowEmailCapturePopup }) {
         <section
           className={`${
             show ? "visible" : "invisible"
-          } bg-slate-50 drop-shadow-md place-content-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-solid absolute flex flex-wrap w-screen h-screen`}
+          } bg-slate-50 z-80 drop-shadow-md place-content-center top-0 left-0 border-solid absolute flex flex-wrap w-screen h-screen`}
         >
           <button
             onClick={() => handleClosePopUp()}
@@ -90,7 +90,7 @@ function EmailCaptureForm({ show, setShowEmailCapturePopup }) {
         <section
           className={`${
             show ? "visible" : "invisible"
-          } bg-slate-50 drop-shadow-md place-content-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 border-solid w-screen h-screen absolute flex flex-wrap`}
+          } bg-slate-50 z-60 drop-shadow-md place-content-center top-0 left-0 border-solid w-screen h-screen absolute flex flex-wrap`}
         >
           <button
             onClick={() => setShowEmailCapturePopup(false)}
@@ -161,7 +161,7 @@ function EmailCaptureForm({ show, setShowEmailCapturePopup }) {
               <div className="flex items-center">
                 <button
                   type="submit"
-                  className="rounded-lg px-5 py-3 text-sm font-medium bg-indigo-700 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700"
+                  className="rounded-lg px-5 py-3 text-sm font-medium bg-blue-700 text-white shadow-sm ring-1 ring-blue-700 hover:bg-blue-700 hover:ring-blue-700"
                 >
                   Get The Guide
                 </button>
