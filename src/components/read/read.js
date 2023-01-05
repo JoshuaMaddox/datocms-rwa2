@@ -72,8 +72,8 @@ export default function Read() {
             </h3>
 
             <p className="text-sm text-gray-700 line-clamp-2">
-              A discussion on how to bring real-world assets to bear and
-              thevchallenges & opportunities that come with it.
+              A discussion on how to bring real-world assets to bear and the
+              challenges & opportunities that come with it.
             </p>
 
             <div className="mt-2 sm:flex sm:items-center sm:gap-2">
@@ -117,7 +117,7 @@ export default function Read() {
 
             <p className="text-sm text-gray-700 line-clamp-2">
               An exploration of real world assets that looks at ontology,
-              problems, solutions, landscape, and predictions
+              problems, solutions, landscape, and predictions.
             </p>
 
             <div className="mt-2 sm:flex sm:items-center sm:gap-2">
@@ -137,6 +137,51 @@ export default function Read() {
         <div className="flex justify-end min-w-24">
           <strong className="text-center rounded-tl-sm rounded-br-sm bg-blue-600 py-1 text-white w-20">
             <span className="text-[10px] font-medium sm:text-xs">BOOKLET</span>
+          </strong>
+        </div>
+      </article>
+
+      <article className="-sm border-2 border-gray-100 bg-white mb-8 w-full md:w-3/4">
+        <div className="flex items-start p-6">
+          <img
+            alt="RWA house made from tokens"
+            src="https://www.datocms-assets.com/91360/1672162744-rwa_house_made_from_tokens.png"
+            className="h-14 w-14 rounded-sm object-cover"
+          />
+
+          <div className="ml-4">
+            <h3 className="font-medium sm:text-lg">
+              <a
+                href="https://blog.defactor.com/trade-finance-the-new-asset-class-91d96c1aaf0a"
+                className="hover:underline"
+              >
+                Trade Finance: The New Asset Class
+              </a>
+            </h3>
+
+            <p className="text-sm text-gray-700 line-clamp-2">
+              Defactor on how tokenized trade finance is opening a
+              multi-trillion USD alternative asset class and bringing
+              efficiencies and improved cash flow to financial trade.
+            </p>
+
+            <div className="mt-2 sm:flex sm:items-center sm:gap-2">
+              <p className="hidden sm:block sm:text-xs sm:text-gray-500">
+                Published By:
+                <a
+                  href="https://blog.defactor.com/trade-finance-the-new-asset-class-91d96c1aaf0a"
+                  className="font-medium underline hover:text-gray-700"
+                >
+                  Defactor
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-end">
+          <strong className="text-center rounded-tl-sm rounded-br-sm bg-orange-600 py-1 text-white w-20">
+            <span className="text-[10px] font-medium sm:text-xs">ARTICLE</span>
           </strong>
         </div>
       </article>
