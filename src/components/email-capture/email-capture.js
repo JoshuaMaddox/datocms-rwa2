@@ -101,13 +101,13 @@ function EmailCaptureForm({ show, setShowEmailCapturePopup }) {
           <div className="w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-full lg:px-8 lg:py-24">
             <div className="mx-auto max-w-lg text-center">
               <h1 className="text-4xl font-black sm:text-6xl">
-                Get The Weekly Guide
+                Get The Fortnightly Update
               </h1>
 
               <p className="mt-4 text-gray-500">
-                The guide to Real-World Assets is an ongoing exploration that is
-                updated weekly. Sign up to get the current guide and the latest
-                updates.
+                The ongoing guide to real-world assets is an exploration that is
+                updated fortnightly. Sign up to get access to past follow, read,
+                and insight lists as well as the latest updates.
               </p>
             </div>
 

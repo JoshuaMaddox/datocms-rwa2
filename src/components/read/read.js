@@ -6,7 +6,9 @@ export default function Read() {
       id="read"
       className="flex-col flex items-center md:justify-between mt-16 mb-16 md:mb-12"
     >
-      <h2 className="text-6xl font-black mb-24 mt-24">The Read List</h2>
+      <h2 className="text-6xl font-black mb-24 mt-24">
+        The Fortnightly Read List
+      </h2>
       <article className="-sm border-2 border-gray-100 bg-white mb-8 w-full md:w-3/4">
         <div className="flex items-start p-6">
           <img

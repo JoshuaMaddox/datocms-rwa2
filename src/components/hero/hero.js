@@ -26,7 +26,7 @@ export default function Hero() {
                 onClick={() => setShowEmailCapturePopup(true)}
                 className="inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20"
               >
-                Get The Weekly Guide
+                Get The Fortnightly Guide
               </a>
             </div>
           </nav>
@@ -53,16 +53,16 @@ export default function Hero() {
               </div>
               <div>
                 <h1 className="text-4xl font-black tracking-tight sm:text-center sm:text-7xl">
-                  Your guide to RWAs—Real-World Assets.
+                  Your Fortnightly Guide to RWAs—Real-World Assets.
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
                   There is a race to dislodge intermediaries and prove
                   efficiencies in the origination, trading, settlement, and
                   administration of hundreds of trillions of dollars in
                   traditional assets through technological and regulatory
-                  breakthroughs. From digitisation, tokenization, and
+                  breakthroughs. From digitization, tokenization, and
                   decentralization to automated administration and compliance,
-                  join us in a weekly exploration of problems-to-be-solved and
+                  join us in an ongoing exploration of problems-to-be-solved and
                   emerging solutions in an ever expanding guide to Real-World
                   Assets, RWAs.
                 </p>
