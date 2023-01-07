@@ -26,7 +26,7 @@ export default function Hero() {
                 onClick={() => setShowEmailCapturePopup(true)}
                 className="inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20"
               >
-                Get The Fortnightly Guide
+                Get The Fortnightly Exploration
               </a>
             </div>
           </nav>
@@ -46,7 +46,8 @@ export default function Hero() {
                       className="font-semibold text-blue-700"
                     >
                       <span className="absolute inset-0" aria-hidden="true" />
-                      Get On The List <span aria-hidden="true">&rarr;</span>
+                      Get The Fortnightly Email{" "}
+                      <span aria-hidden="true">&rarr;</span>
                     </a>
                   </span>
                 </div>
@@ -59,10 +60,10 @@ export default function Hero() {
                   There is a race to dislodge intermediaries and prove
                   efficiencies in hundreds of trillions of dollars of
                   traditional assets through technological and regulatory
-                  breakthroughs. From digitization, tokenization,
+                  breakthroughs. From digitization, tokenization, and
                   decentralization to automated administration and compliance,
                   join us in an ongoing exploration of problems-to-be-solved and
-                  emerging solutions around real-world Assets— RWAs—and their
+                  emerging solutions around real-world Assets—RWAs—and their
                   emerging role in DeFi and debt markets.
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
@@ -71,7 +72,7 @@ export default function Hero() {
                     onClick={() => setShowEmailCapturePopup(true)}
                     className="inline-block rounded-lg bg-blue-700 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-700 hover:bg-blue-700 hover:ring-blue-700"
                   >
-                    Get Updates In Your Inbox
+                    Updates In Your Inbox
                     <span className="text-indigo-200" aria-hidden="true">
                       &rarr;
                     </span>

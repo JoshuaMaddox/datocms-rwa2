@@ -105,9 +105,9 @@ function EmailCaptureForm({ show, setShowEmailCapturePopup }) {
               </h1>
 
               <p className="mt-4 text-gray-500">
-                The ongoing guide to real-world assets is an exploration that is
-                updated fortnightly. Sign up to get access to past follow, read,
-                and insights lists as well as the latest updates.
+                Your ongoing guide to real-world assets is an exploration
+                updated each fortnight. Sign up to get access to people and
+                projets to follow as well as read and insights lists.
               </p>
             </div>
 
