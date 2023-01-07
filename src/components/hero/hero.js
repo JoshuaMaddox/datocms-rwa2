@@ -57,14 +57,13 @@ export default function Hero() {
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
                   There is a race to dislodge intermediaries and prove
-                  efficiencies in the origination, trading, settlement, and
-                  administration of hundreds of trillions of dollars in
+                  efficiencies in hundreds of trillions of dollars of
                   traditional assets through technological and regulatory
-                  breakthroughs. From digitization, tokenization, and
+                  breakthroughs. From digitization, tokenization,
                   decentralization to automated administration and compliance,
                   join us in an ongoing exploration of problems-to-be-solved and
-                  emerging solutions in an ever expanding guide to Real-World
-                  Assets, RWAs.
+                  emerging solutions around real-world Assets— RWAs—and their
+                  emerging role in DeFi and debt markets.
                 </p>
                 <div className="mt-8 flex gap-x-4 sm:justify-center">
                   <button
