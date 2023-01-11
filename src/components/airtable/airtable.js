@@ -7,12 +7,13 @@ export default function Airtable({ content }) {
         The Fortnighly Follow List
       </h2>
       <iframe
-        className="airtable-embed mt-12 mb-12"
-        src="https://airtable.com/embed/shrJP6fPdWXPZ8BTi?backgroundColor=blue&viewControls=on"
+        class="airtable-embed"
+        src="https://airtable.com/embed/shrh46xBuwgockreh?backgroundColor=blue&viewControls=on"
         frameborder="0"
         onmousewheel=""
         width="100%"
         height="533"
+        style="background: transparent; border: 1px solid #ccc;"
       ></iframe>
     </div>
   );

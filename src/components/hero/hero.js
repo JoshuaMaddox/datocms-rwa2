@@ -58,7 +58,7 @@ export default function Hero() {
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
                   There is a race to dislodge intermediaries and prove
-                  efficiencies in hundreds of trillions of dollars of
+                  efficiencies surrounding hundreds of trillions of dollars of
                   traditional assets through technological and regulatory
                   breakthroughs. From digitization, tokenization, and
                   decentralization to automated administration and compliance,
