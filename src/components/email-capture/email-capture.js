@@ -27,6 +27,7 @@ function EmailCaptureForm({ show, setShowEmailCapturePopup }) {
           updateEnabled: false,
           email: email,
           attributes: { FIRSTNAME: firstName, LASTNAME: lastName },
+          listIds: [5],
         },
         {
           headers: {
